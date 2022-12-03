@@ -3,15 +3,6 @@
 * @jest-environment jsdom
 
 */
-/* 
-describe("handleSubmit", () => {
-  test("should sort movies");
-});
- */
-// arrange
-
-//act
-//assert
 
 import * as functions from "./../ts/functions";
 import { IMovie } from "./../ts/models/Movie";

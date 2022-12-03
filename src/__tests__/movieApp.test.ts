@@ -106,7 +106,7 @@ describe("createHtml", () => {
 //displayNoResult
 test("should display message", async () => {
   // arrange
-
+  /*
   let container: HTMLDivElement = document.createElement(
     "div"
   ) as HTMLDivElement;
@@ -122,6 +122,24 @@ test("should display message", async () => {
   movieAppFunctions.displayNoResult(container);
 
   //assert
-  expect(container.innerHTML).toBe(`<p>Inga sökresultat att visa</p>`);
+
+  //assert
+    expect(container.innerHTML).toBe(`<p>Inga sökresultat att visa</p>`);
+
+ */
+
+  document.body.innerHTML = `<div id="movie-container"></div>`;
+  let container: HTMLDivElement = document.getElementById(
+    "movie-container"
+  ) as HTMLDivElement;
+  expect.assertions(1);
+
+  //act
+  movieAppFunctions.displayNoResult(container);
+  //assert
+  expect(document.querySelector("p")?.innerHTML).toBe(
+    `Inga sökresultat att visa`
+  );
+
   document.body.innerHTML = "";
 });
