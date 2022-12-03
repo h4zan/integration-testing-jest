@@ -59,6 +59,7 @@ describe("handleSubmit()", () => {
   `;
 
     let spy = jest.spyOn(movieAppFunctions, "createHtml").mockReturnValue();
+    expect.assertions(1);
 
     //act
     await movieAppFunctions.handleSubmit();
@@ -84,6 +85,7 @@ describe("createHtml", () => {
       "movie-container"
     ) as HTMLDivElement;
     let movies: IMovie[] = await getData(searchText);
+    expect.assertions(3);
 
     //Act
 
@@ -114,6 +116,7 @@ test("should display message", async () => {
   ) as HTMLParagraphElement;
 
   noMessage.innerHTML = "Inga sökresultat att visa";
+  expect.assertions(1);
 
   //act
   movieAppFunctions.displayNoResult(container);

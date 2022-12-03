@@ -56,9 +56,11 @@ jest.mock("axios", () => ({
 }));
 
 test("Should get mock data", async () => {
-  //arrangep
+  //arrange
 
   let searchText: string = "hej";
+
+  expect.assertions(2);
 
   //act
 

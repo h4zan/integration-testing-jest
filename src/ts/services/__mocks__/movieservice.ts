@@ -7,7 +7,7 @@ export const mockData: IMovie[] = [
     imdbID: "1",
     Type: "Movie",
     Poster: "url",
-    Year: "2001",
+    Year: "1997",
   },
 
   {
@@ -15,7 +15,7 @@ export const mockData: IMovie[] = [
     imdbID: "2",
     Type: "Movie",
     Poster: "url",
-    Year: "2002",
+    Year: "1998",
   },
 
   {
@@ -23,7 +23,7 @@ export const mockData: IMovie[] = [
     imdbID: "3",
     Type: "Movie",
     Poster: "url",
-    Year: "2003",
+    Year: "1999",
   },
 ];
 
